@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #52b674;
+  font-family: "Overpass", sans-serif;
+  font-weight: 200;
+}
+
+h1 {
+  margin: 40px;
+  text-align: center;
+  font-weight: 100;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M6 8h20M6 16h20M6 24h20'/%3E%3C/svg%3E");
+}
+
+.navbar {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.navbar-toggler {
+  padding: 0.75rem 0.75rem;
+  font-size: 2.25rem;
+  line-height: 1;
+  background-color: black;
+  /* border: 1px solid transparent; */
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+}
+
+.science {
+  width: 33%;
+}
+
+.first {
+  background-color: #1c1717;
+  min-height: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.second {
+  background-color: white;
+  min-height: 500px;
+  margin-right: 50px;
+}
+
+.third {
+  background-color: #1c1717;
+  min-height: 500px;
+}
+
+.scienceMain {
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #f7b84b;
+}
+
+.scienceMain2 {
+  padding-left: 20px;
+  color: #f7b84b;
+}
+
+.scienceP {
+  color: white;
+  margin: 20px;
+}
+
+.nature {
+  width: 33%;
+}
+.natureMain {
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #f7b84b;
+}
+.natureMain2 {
+  padding-left: 20px;
+  color: #f7b84b;
+}
+
+.natureP {
+  margin: 20px;
+}
+
+.video {
+  width: 33%;
+}
+
+.videoP {
+  margin: 20px;
+  color: #f7b84b;
+}
+
+a {
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  //font-size: 1.9rem;
+  //font-weight: 600;
+  letter-spacing: 4px;
+  color: #f7b84b;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .science {
+    width: 100%;
+  }
+
+  .nature {
+    width: 100%;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .first {
+    margin: 0;
+  }
+
+  .second {
+    margin: 0;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .navbar-toggler {
+    font-size: 1.25rem;
+  }
+}
